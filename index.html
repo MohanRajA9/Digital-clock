@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL CLOCK</title>
+</head>
+<body>
+    <div class="container">
+        <div class="timer">
+            <div>
+                <span class="hour">00</span>
+            </div>
+            <span class="colon">:</span>
+            <div>
+                <span class="minute">00</span>
+            </div>
+            <span class="colon">:</span>
+            <div>
+                <span class="second">00</span>
+            </div>
+
+            <div class="meridiem">
+                <span class="am active">AM</span>
+                <span class="pm">PM</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    .meridiem{
+        font-size: x-large;
+    }
+    .hour,.minute,.second{
+        font-size: xx-large;
+    }
+    .colon{
+        font-size: xx-large ;
+       padding-bottom: 6px;
+    }
+    .container{
+
+        display: flex;
+        height: 90vh;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .timer{
+        display: flex;
+        border: solid red;
+        align-items: center;
+        justify-content: space-around;
+        /* padding: 1%; */
+        width: 35vw;
+        height: 10vh;
+        border-radius: 25px;
+    }
+    .meridiem{
+        display: flex;
+        height: 100%;
+        border-left: 2px solid red;
+        /* padding: 2%; */
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        /* padding-right: 0px; */
+        /* padding-left: 15px; */
+        width: 60px;
+        text-align: end;
+    }
+    .am,.pm{
+       color: rgb(0, 0, 0, 0.1);
+       
+    }
+
+    .active{
+        color: rgb(0, 0, 0, 1);
+    }
+</style>
+<script src="./digitalClock.js"></script>
+</html>
+
